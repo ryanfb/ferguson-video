@@ -2,3 +2,4 @@
 *.tsv
 urls-only.txt
 youtube-dl
+youtube-dl.log
