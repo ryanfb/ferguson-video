@@ -1,5 +1,6 @@
 *.csv
 *.tsv
-urls-only.txt
+*.txt
+youtube-dl-vines
 youtube-dl
-youtube-dl.log
+*.log
