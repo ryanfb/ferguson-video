@@ -26,4 +26,4 @@ youtube-dl-non-vines.log: non-vines-only.txt
 ferguson-urls/urls.tsv.gz:
 	git submodule update --init --recursive
 
-.PRECIOUS: *.log
+.PRECIOUS: youtube-dl-vines.log youtube-dl-non-vines.log
