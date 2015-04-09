@@ -1,0 +1,4 @@
+*.csv
+*.tsv
+urls-only.txt
+youtube-dl
