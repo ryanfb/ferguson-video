@@ -15,3 +15,5 @@ youtube-dl.log: urls-only.txt
 
 ferguson-urls/urls.tsv.gz:
 	git submodule update --init --recursive
+
+.PRECIOUS: youtube-dl.log
