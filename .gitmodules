@@ -1,0 +1,3 @@
+[submodule "ferguson-urls"]
+	path = ferguson-urls
+	url = https://github.com/edsu/ferguson-urls.git
