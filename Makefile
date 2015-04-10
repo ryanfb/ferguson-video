@@ -21,7 +21,7 @@ youtube-dl-vines.log: vines-only.txt
 
 youtube-dl-non-vines.log: non-vines-only.txt
 	mkdir -p youtube-dl
-	cd youtube-dl && youtube-dl -w --write-description --write-info-json --write-annotations -i -a ../non-vines-only.txt &> ../youtube-dl-non-vines.log
+	cd youtube-dl && youtube-dl --no-playlist --datebefore 20140901 --dateafter 20140801 -w --write-description --write-info-json --write-annotations -i -a ../non-vines-only.txt &> ../youtube-dl-non-vines.log
 
 ferguson-urls/urls.tsv.gz:
 	git submodule update --init --recursive
