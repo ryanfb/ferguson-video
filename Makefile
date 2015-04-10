@@ -17,11 +17,11 @@ urls.tsv: ferguson-urls/urls.tsv.gz
 
 youtube-dl-vines.log: vines-only.txt
 	mkdir -p youtube-dl-vines
-	cd youtube-dl-vines && youtube-dl -w --write-description --write-info-json --write-annotations -i -a ../vines-only.txt &> ../youtube-dl-vines.log
+	cd youtube-dl-vines && youtube-dl -w --write-thumbnail --write-description --write-info-json --write-annotations -i -a ../vines-only.txt &> ../youtube-dl-vines.log
 
 youtube-dl-non-vines.log: non-vines-only.txt
 	mkdir -p youtube-dl
-	cd youtube-dl && youtube-dl --no-playlist --datebefore 20140901 --dateafter 20140801 -w --write-description --write-info-json --write-annotations -i -a ../non-vines-only.txt &> ../youtube-dl-non-vines.log
+	cd youtube-dl && youtube-dl --no-playlist --datebefore 20140901 --dateafter 20140801 -w --write-thumbnail --write-description --write-info-json --write-annotations -i -a ../non-vines-only.txt &> ../youtube-dl-non-vines.log
 
 ferguson-urls/urls.tsv.gz:
 	git submodule update --init --recursive
